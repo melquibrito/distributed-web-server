@@ -1,39 +1,35 @@
 const {server, headers} = require("../conf/conf");
 const fetch = require("node-fetch");
 
-const get = function (url) {
+const get = function (url, res) {
     return fetch(url, {headers: headers}).then((resp) => {
         return resp.text()
     }).then((data) => {
-        return data
+        return res.send(data)
     }).catch((e) => {
-        console.log(e)
-        return null
+        return res.status(500).send()
     })
 }
 
-const getAriaPage = function (page) {
+const getAriaPage = function (page, res) {
     if (page === 'home') {
-        return get(server.A + "/assets/aria/index.html")
+        return get(server.A + "/assets/aria/index.html", res)
     }
-    if (page === 'terms-conditions') {
-        return get(server.A + "/assets/aria/terms-conditions.html")
-    }
-    if (page === 'privacy-policy') {
-        return get(server.A + "/assets/aria/privacy-policy.html")
-    }
+    return res.status(404).send()
 }
 
-const getSpotifyPlayerPage = function (page) {
+const getSpotifyPlayerPage = function (page, res) {
     if (page === 'home') {
-        return get(server.B + "/assets/spotify/index.html")
+        return get(server.B + "/assets/spotify/index.html", res)
     }
+    return res.status(404).send()
 }
 
-const getDazzlePage = function (page) {
+const getDazzlePage = function (page, res) {
     if (page === 'home') {
-        return get(server.B + "/assets/dazzle/index.html")
+        return get(server.B + "/assets/dazzle/index.html", res)
     }
+    return res.status(404).send()
 }
 
 module.exports = {
@@ -55,21 +51,18 @@ module.exports = {
         }
 
         if (isHtml) {
-            let html = await get(`${at}/${path}`, res);
-            if (html) {
-                return res.send(html);
-            }
+            return get(`${at}/${path}`, res);
         }
 
         return res.redirect(`${at}/${path}`)
     },
     fetchPage: async function (req, res) {
-        let {entity} = req.params, page = req.url.split('/')[2], html;
+        let {entity} = req.params, page = req.url.split('/')[2];
         switch (entity) {
-            case 'aria': html = await getAriaPage(page); break;
-            case 'dazzle': html = await getDazzlePage(page); break;
-            case 'spotify': html = await getSpotifyPlayerPage(page); break;
+            case 'aria': return getAriaPage(page, res);
+            case 'dazzle': return getDazzlePage(page, res);
+            case 'spotify': return getSpotifyPlayerPage(page, res);
         }
-        return html ? res.send(html) : res.status(404).send()
+        return res.status(404).send()
     }
 }
