@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spotify Wrapper Player</title>
+  <meta name="description" content="A mini spotify player" />
+  <meta name="keywords" content="spotify, music player, artists list, albums, music, web-server, distributed server" />
+  <meta name="robots" content="index, follow" />
+  <meta name="author" content="Dheyson Alves and Melqui Brito" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet" />
+  <link rel="stylesheet" href="../src/styles/global.css" />
+  <link rel="stylesheet" href="main.css" />
+</head>
+
+<body>
+  <aside class="aside">
+    <div class="aside-container">
+      <header class="aside-header">
+        <a class="aside-link" href="index.html">
+          <svg class="aside-icon" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 492 492"
+            style="enable-background:new 0 0 492 492;" xml:space="preserve">
+            <path fill="currentColor" d="M464.344,207.418l0.768,0.168H135.888l103.496-103.724c5.068-5.064,7.848-11.924,7.848-19.124
+          			c0-7.2-2.78-14.012-7.848-19.088L223.28,49.538c-5.064-5.064-11.812-7.864-19.008-7.864c-7.2,0-13.952,2.78-19.016,7.844
+          			L7.844,226.914C2.76,231.998-0.02,238.77,0,245.974c-0.02,7.244,2.76,14.02,7.844,19.096l177.412,177.412
+          			c5.064,5.06,11.812,7.844,19.016,7.844c7.196,0,13.944-2.788,19.008-7.844l16.104-16.112c5.068-5.056,7.848-11.808,7.848-19.008
+          			c0-7.196-2.78-13.592-7.848-18.652L134.72,284.406h329.992c14.828,0,27.288-12.78,27.288-27.6v-22.788
+                C492,219.198,479.172,207.418,464.344,207.418z">
+            </path>
+            <h1 class="aside-title">Voltar</h1>
+          </svg>
+        </a>
+      </header>
+    </div>
+  </aside>
+
+  <main class="container">
+    <div class="container-inner">
+      <div class="container-details" id="container-details">
+        <img class="album-image" id="album-img" src="${data.images[0].url}" alt="${data.name}">
+        <p class="album-title">${data.name}</p>
+        <a href="./artist-details.html">
+          <p class="album-artist">${data.artists[0].name}</p>
+        </a>
+        <p class="album-counter">${data.tracks.total} Músicas</p>
+        <p class="album-counter">${data.popularity} Músicas</p>
+        <p class="album-followers" data-album-id=${data.id}>${data.popularity} Seguidores</p>
+        <p class="album-followers" data-album-id=${data.id}>${data.explicit} Seguidores</p>
+      </div>
+    </div>
+  </main>
+
+  <script src="bundle.js"></script>
+</body>
+
+</html>
