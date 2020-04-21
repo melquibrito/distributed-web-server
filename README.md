@@ -32,9 +32,14 @@ In Internal Servers conf.js files you will find the following configuration:
 
 > Files to be provided go in public folder of __Internal Servers__.
 
-## Getting Started
-Our initial motivation was to create a PWA mini-player using Spotify data, with a search area for artists or songs and a 30-second 'player'. Think about rendering HTML pages from two distributed servers, and using a distributor server as middleware between client and server.
+## Hosted Applications
+These below are the hosted applications we have included for the purpose of testing our project.
+* ```/spotify/home```: PWA mini-player using Spotify data, with a search area for artists or songs and a 30-second audio player. This application is being hosted on __Internal Server B__ and serves as an example on how widely distrubuted a distributed server can be, conceptually speaking. It brings up data from distributed web servers on the web while being hosted on an internal server that is part of another distributed web server. See more details about this project in particular [here](https://github.com/Dheyson/spotify-player);
 
+* ```/aria/home```: Html template downloaded at [onepagelove](https://onepagelove.com/aria). Hosted on __Internal Server A__;
+* ```/dazzle/home```: Html template donwloaded at [onepagelove](https://onepagelove.com/dazzle). Hosted on __Internal Server B__.
+
+## Getting Started
 ### Prerequisites
 What things you need to install the software and how to install them
 
