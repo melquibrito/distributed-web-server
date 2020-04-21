@@ -23,7 +23,7 @@ src ---|
 In Distributer Server conf.js file in conf folder you will find the following configuration:
 * Host: Distributer HOST;
 * Port: Distributer PORT;
-* Serevers: Object with all the __Internal Servers__ available to fetch files from.
+* Servers: Object with all the __Internal Servers__ available to fetch files from.
 
 In Internal Servers conf.js files you will find the following configuration:
 * Host: Internal Server HOST;
