@@ -2,7 +2,7 @@
 This is a prototype of a distributed web server built with [Node js](https://github.com/nodejs/node) alongside Node js Framework [Express](http://expressjs.com/) with the purpose of demonstrating how a web server may be distributed internally.
 
 ## Architecture
-We have built three distinct web servers, distributed locally. __Server Distributer__ as the main server, being the one responsible for handling client requests and feching the files that are all distributed through the other two servers, __Server A__ and __Server B__.
+We have built three distinct web servers distributed locally. __Server Distributer__ as the main server, being the one responsible for handling client requests and feching files that are all distributed through the other two servers, __Server A__ and __Server B__. As a matter of security, __Server A__ and __Server B__ will only allow requests coming from __Server Distributer__ even though they are not necessarily connected to the internet. Servers __A__ and __B__ work as File Servers serving files to __Server Distributer__, which then send them to the clients accordingly.
 
 This prototype project is entirely based on the distributed web server architecture illustrated down below.
 ![illustration](/Distributed-Web-Server-Illustration.png)
