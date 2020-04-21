@@ -20,7 +20,7 @@ src ---|--- controller
 src ---|
        |--- public
 ```
-In Distributer Server conf.js file in conf folder you will find the following configurations:
+In Distributer Server conf.js file in conf folder you will find the following configuration options:
 ```javascript
 module.exports {
     HOST: 'distributer domain',
