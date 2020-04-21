@@ -2,10 +2,36 @@
 This is a prototype of a distributed web server built with [Node js](https://github.com/nodejs/node) alongside Node js Framework [Express](http://expressjs.com/) with the purpose of demonstrating how a web server may be distributed internally.
 
 ## Architecture
-We have built three distinct web servers distributed locally. __Server Distributer__ as the main server, being the one responsible for handling client requests and feching files that are all distributed through the other two servers, __Server A__ and __Server B__. As a matter of security, __Server A__ and __Server B__ will only allow requests coming from __Server Distributer__ even though they are not necessarily connected to the internet. Servers __A__ and __B__ work as File Servers serving files to __Server Distributer__, which then send them to the clients accordingly.
+We have built three distinct web servers distributed locally. __Server Distributer__ as the main server, being the one responsible for handling client requests and feching files that are all hosted on the other two servers, __Server A__ and __Server B__. As a matter of security, __Server A__ and __Server B__ will only allow requests coming from __Server Distributer__ even though they are not necessarily connected to the internet. Servers __A__ and __B__ work as File Servers serving files to __Server Distributer__, which then send them to the clients accordingly.
 
 This prototype project has its architecture entirely based on the one illustrated below.
 ![illustration](/Distributed-Web-Server-Illustration.png)
+
+## File Structure
+* Distributer Server
+```
+       |--- conf 
+src ---|--- controller 
+       |--- routes 
+```
+* Internal Servers _(host servers A and B)_
+```
+       |--- conf
+src ---|
+       |--- public
+```
+In Distributer Server conf.js file in conf folder you will find the following configurations:
+```javascript
+module.exports {
+    HOST: 'distributer domain',
+    PORT: 'distributer port',
+    servers: { // Internal servers to fetch files from
+        A: 'server A domain',
+        B: 'server B domain'
+    }
+}
+```
+Files to be provided go in public folder of internal servers.
 
 ## Getting Started
 Our initial motivation was to create a PWA mini-player using Spotify data, with a search area for artists or songs and a 30-second 'player'. Think about rendering HTML pages from two distributed servers, and using a distributor server as middleware between client and server.
