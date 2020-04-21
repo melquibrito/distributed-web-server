@@ -41,22 +41,13 @@ These below are the relative paths of each of the hosted applications we have in
 
 ## Getting Started
 ### Prerequisites
-What things you need to install the software and how to install them
-
-```
-nodejs >= 10.0
-npm >= 6.10.0 or yarn@latest
-```
+* nodejs >= 10.0
+* npm >= 6.10.0 or yarn@latest
 
 ### Installing
-A step by step series of examples that tell you how to get a development env running
-
-Say what the step will be
-```
-- Download the project or clone it
-- npm install or yarn install on each root server
-- npm run dev or yarn run dev on each root server
-```
+1. Download the project or clone it;
+2. Run ```npm install``` or ```yarn install``` on terminal on each root server
+3. Run ```npm run dev``` or ```yarn run dev``` on terminal on each root server
 
 ## Contributing
 Please read [CONTRIBUTING.md](https://github.com/melquibrito/distributed-web-server/blob/master/CONTRIBUTING.md) for details on our code of conduct, and the process for submitting pull requests to us.
