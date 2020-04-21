@@ -41,13 +41,14 @@ These below are the relative paths of each of the hosted applications we have in
 
 ## Getting Started
 ### Prerequisites
-* nodejs >= 10.0
-* npm >= 6.10.0 or yarn@latest
+* [nodejs](https://github.com/nodejs/node) >= 10.0
+* [npm](https://github.com/npm/cli) >= 6.10.0 _or_ [yarn@latest](https://github.com/yarnpkg/yarn)
 
 ### Installing
+Follow the steps down below
 1. Download the project or clone it;
-2. Run ```npm install``` or ```yarn install``` on terminal on each root server
-3. Run ```npm run dev``` or ```yarn run dev``` on terminal on each root server
+2. Run ```npm install``` or ```yarn install``` on terminal on each server root directory;
+3. Run ```npm run dev``` or ```yarn run dev``` on terminal on each server root directory.
 
 ## Contributing
 Please read [CONTRIBUTING.md](https://github.com/melquibrito/distributed-web-server/blob/master/CONTRIBUTING.md) for details on our code of conduct, and the process for submitting pull requests to us.
@@ -61,4 +62,3 @@ See also the list of [contributors](https://github.com/melquibrito/distributed-w
 
 ## License
 This project is licensed under the MIT License - see the [LICENSE](LICENSE.md) file for details.
-
