@@ -7,7 +7,7 @@ We have built three distinct web servers distributed locally. __Server Distribut
 This prototype project has its architecture entirely based on the one illustrated below.
 ![illustration](assets/img/web-server-illustration.png)
 
-## File Structure
+### File Structure
 * Distributer Server
 ```
        |--- conf 
