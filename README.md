@@ -11,8 +11,8 @@ Our initial motivation was to create a PWA mini-player using Spotify data, with 
 What things you need to install the software and how to install them
 
 ```
-	nodejs >= 10.0
-	npm or yarn
+nodejs >= 10.0
+npm or yarn
 ```
 
 ### Installing
