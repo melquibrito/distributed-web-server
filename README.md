@@ -54,9 +54,9 @@ Follow the steps down below
 Please read [CONTRIBUTING.md](https://github.com/melquibrito/distributed-web-server/blob/master/CONTRIBUTING.md) for details on our code of conduct, and the process for submitting pull requests to us.
 
 ## Authors
-* **[Melqui Brito](https://github.com/melquibrito)**;
-* **[Dheyson Alves](https://github.com/Dheyson)**;
-* **[Átila Assunção](https://github.com/AtilaAssuncao)**.
+* **[Melqui Brito](https://github.com/melquibrito)**
+* **[Dheyson Alves](https://github.com/Dheyson)**
+* **[Átila Assunção](https://github.com/AtilaAssuncao)**
 
 See also the list of [contributors](https://github.com/melquibrito/distributed-web-server/contributors) who participated in this project.
 
