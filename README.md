@@ -20,17 +20,16 @@ src ---|--- controller
 src ---|
        |--- public
 ```
-In Distributer Server conf.js file in conf folder you will find the following configuration options:
-```javascript
-module.exports {
-    HOST: 'distributer domain',
-    PORT: 'distributer port',
-    servers: { // Internal servers to fetch files from
-        A: 'server A domain',
-        B: 'server B domain'
-    }
-}
-```
+In Distributer Server conf.js file in conf folder you will find the following configuration:
+* Host: Distributer HOST;
+* Port: Distributer PORT;
+* Serevers: Object with all the _Internal Servers_ available to fetch files from.
+
+In Internal Servers conf.js files you will find the following configuration:
+* Host: Internal Server HOST;
+* Port: Internal Server PORT;
+* Distributer: Domain to allow requests from (_Distributer Server_ domain).
+
 Files to be provided go in public folder of internal servers.
 
 ## Getting Started
