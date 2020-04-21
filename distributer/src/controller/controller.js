@@ -1,4 +1,4 @@
-const {server, headers} = require("../conf/conf");
+const {servers, headers} = require("../conf/conf");
 const fetch = require("node-fetch");
 
 const get = function (url, res) {
@@ -13,21 +13,21 @@ const get = function (url, res) {
 
 const getAriaPage = function (page, res) {
     if (page === 'home') {
-        return get(server.A + "/assets/aria/index.html", res)
+        return get(servers.A + "/assets/aria/index.html", res)
     }
     return res.status(404).send()
 }
 
 const getSpotifyPlayerPage = function (page, res) {
     if (page === 'home') {
-        return get(server.B + "/assets/spotify/index.html", res)
+        return get(servers.B + "/assets/spotify/index.html", res)
     }
     return res.status(404).send()
 }
 
 const getDazzlePage = function (page, res) {
     if (page === 'home') {
-        return get(server.B + "/assets/dazzle/index.html", res)
+        return get(servers.B + "/assets/dazzle/index.html", res)
     }
     return res.status(404).send()
 }
@@ -43,9 +43,9 @@ module.exports = {
 
         let path = `assets/${req.url.slice(1)}`, at;
         if (origin === 'aria') {
-            at = server.A;
+            at = servers.A;
         } else if (origin === 'dazzle' || origin === 'spotify') {
-            at = server.B
+            at = servers.B
         } else {
             return res.status(404).send()
         }
