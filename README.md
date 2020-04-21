@@ -1,6 +1,6 @@
-# Distributed Systems - Web Server
+# Distributed Web Server - Prototype
 
-A distributor server as an middleware between client and server.
+This is a prototype of a distributed web server built with [Node js](https://github.com/nodejs/node) alongside Node js Framework [Express](http://expressjs.com/) with the purpose of demonstrating how a web server may be distributed internally.
 
 ## Getting Started
 
