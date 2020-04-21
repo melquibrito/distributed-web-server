@@ -15,7 +15,7 @@ What things you need to install the software and how to install them
 
 ```
 nodejs >= 10.0
-npm or yarn
+npm >= 6.10.0 or yarn@latest
 ```
 
 ### Installing
@@ -23,28 +23,21 @@ A step by step series of examples that tell you how to get a development env run
 
 Say what the step will be
 ```
-- Download the project
-- npm install or yarn install
-- npm run dev or yarn run dev in the distributed server, server A and server B
+- Download the project or clone it
+- npm install or yarn install on each root server
+- npm run dev or yarn run dev on each root server
 ```
 
-## Deployment
-Add additional notes about how to deploy this on a live system
-
 ## Contributing
-Please read [CONTRIBUTING.md](https://github.com/melquibrito/distributed-server/blob/master/CONTRIBUTING.md) for details on our code of conduct, and the process for submitting pull requests to us.
+Please read [CONTRIBUTING.md](https://github.com/melquibrito/distributed-web-server/blob/master/CONTRIBUTING.md) for details on our code of conduct, and the process for submitting pull requests to us.
 
 ## Authors
 * **[Melqui Brito](https://github.com/melquibrito)** - _Web Servers_
 * **[Dheyson Alves](https://github.com/Dheyson)** - _[PWA Spotify Player](https://github.com/Dheyson/spotify-player)_
 * **[Átila Assunção](https://github.com/AtilaAssuncao)** - _Web Servers_
 
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
+See also the list of [contributors](https://github.com/melquibrito/distributed-web-server/contributors) who participated in this project.
 
 ## License
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
 
-## Acknowledgments
-* Hat tip to anyone whose code was used
-* Inspiration
-* etc
