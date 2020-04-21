@@ -5,7 +5,7 @@ This is a prototype of a distributed web server built with [Node js](https://git
 We have built three distinct web servers distributed locally. __Server Distributer__ as the main server, being the one responsible for handling client requests and feching files that are all hosted on the other two servers, __Server A__ and __Server B__. As a matter of security, __Server A__ and __Server B__ will only allow requests coming from __Server Distributer__ even though they are not necessarily connected to the internet. Servers __A__ and __B__ work as File Servers serving files to __Server Distributer__, which then send them to the clients accordingly.
 
 This prototype project has its architecture entirely based on the one illustrated below.
-![illustration](/Distributed-Web-Server-Illustration.png)
+![illustration](assets/img/web-server-illustration.png)
 
 ## File Structure
 * Distributer Server
