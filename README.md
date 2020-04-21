@@ -30,7 +30,7 @@ In Internal Servers conf.js files you will find the following configuration:
 * Port: Internal Server PORT;
 * Distributer: Domain to allow requests from (__Distributer Server__ domain).
 
-Files to be provided go in public folder of internal servers.
+> Files to be provided go in public folder of __Internal Servers__.
 
 ## Getting Started
 Our initial motivation was to create a PWA mini-player using Spotify data, with a search area for artists or songs and a 30-second 'player'. Think about rendering HTML pages from two distributed servers, and using a distributor server as middleware between client and server.
