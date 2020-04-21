@@ -42,7 +42,7 @@ These below are the relative paths of each of the hosted applications we have in
 ## Getting Started
 ### Prerequisites
 * [nodejs](https://github.com/nodejs/node) >= 10.0
-* [npm](https://github.com/npm/cli) >= 6.10.0 _or_ [yarn@latest](https://github.com/yarnpkg/yarn)
+* [npm](https://github.com/npm/cli) >= 6.10.0  __OR__  [yarn@latest](https://github.com/yarnpkg/yarn)
 
 ### Installing
 Follow the steps down below
