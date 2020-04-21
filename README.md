@@ -45,7 +45,7 @@ These below are the relative paths of each of the hosted applications we have in
 * [npm](https://github.com/npm/cli) >= 6.10.0  __OR__  [yarn@latest](https://github.com/yarnpkg/yarn)
 
 ### Installing
-Follow the steps down below
+Follow the steps below
 1. Download the project or clone it;
 2. Run ```npm install``` or ```yarn install``` on terminal on each server root directory;
 3. Run ```npm run dev``` or ```yarn run dev``` on terminal on each server root directory.
